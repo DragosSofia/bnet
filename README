@@ -1,0 +1,14 @@
+Readme
+Pentru reprezentarea datelor am folosit structurile de date folosite la laborator
+
+Task1 
+ Pentru taskul 1 folosim un dfs care cauta o muchie de intoarcere , daca o gasim graful are cicluri daca nu nu are 
+
+Task2
+ Pentru fiecare set de intrebari apelam functia independenta in care vom stabili daca nodurile sunt independente sau nu 
+ In functia independenta mai intai cream un graf intors al celui dat pentru a putea merge spre parinti, apoi folosind acest
+graf vom calcula valuarea vectorului ance care are urmatoarea reprezentare: ance[ nod ] = 1 daca nodul face parte din cele fate in intrebare
+si 0 in caz negativ, dupa aceea cream o matrice de adiacenta pentru a verifica mai usor existenta unor noduri. Apoi moralizam subgraful format din nodurile de
+interes care au ance[ node ] = 1 . Transformam tot graful normalizat in unul neorientat si scoatem din nodurile de interes nodurile fata de de care cautam independenta
+si apoi cautam un drum intre a si b cu ajutorul functiei reach_distance 
+  	
